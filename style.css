@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --red-main-color: red;
+}
+.red-main-color {
+  color: var(--red-main-color);
+}
 html {
   font-size: 10px;
 }
@@ -38,4 +44,26 @@ html {
 .frame {
   border: 1px solid black;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+}
+.header-title {
+  font-size: 36px;
+  flex: 1;
+  text-align: center;
+}
+.header-btn {
+  font-family: "Kufam", cursive;
+  font-size: 1.8rem;
+  padding: 24px;
+  background: none;
+  border: unset;
+  outline: unset;
+  cursor: pointer;
+  font-weight: 500;
 }
